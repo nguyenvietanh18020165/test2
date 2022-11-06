@@ -16,3 +16,21 @@
 .content .product .img {
     border: 1px solid black;
 }
+
+.content .pr_link .pr_list {
+    text-decoration: none;
+}
+
+.content .pr_banner {
+    padding-bottom: 10px;
+}
+
+.content .desc {
+    border-bottom: 1px dotted green;
+    padding-bottom: 20px;
+}
+
+.footer .end{
+    float: right;
+}
+
