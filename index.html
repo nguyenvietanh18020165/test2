@@ -22,7 +22,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="button col-4 pt-2">
+                <div class="col-4 pt-2">
                     <button type="button" class="btn btn-success ms-2">Button</button>
                     <button type="button" class="btn btn-success">Button</button>
                 </div>
@@ -49,8 +49,24 @@
                                 <a class="nav-link" href="#">TRANG CHỦ</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">GIỚI THIỆU</a>
+                                <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">GIỚI THIỆU</a>
                             </li>
+                            <div class="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Giới thiệu</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body" >
+                                      <textarea cols="45" rows="10" placeholder="Add more notes if you want.."></textarea>
+                                    </div>
+                                    <div class="modal-footer justify-content-center">
+                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NOTE</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">SẢN PHẨM </a>
                             </li>
@@ -74,7 +90,7 @@
             <div class="row">
                 <div class="product col-8">
 
-                    <div class="mt-3 border-bottom border-success text-success"><b>Sản phẩm mới</b></div>
+                    <div class="mt-3 border-bottom border-success text-success"><h4><b>Sản phẩm mới</b></h4></div>
 
                     <div class="d-flex">
                         <img src="/assets/img/product-1.jpg" class="product_img col-5 pt-3" alt="">
@@ -106,7 +122,7 @@
                     </div>
 
                     <div class="product_news">
-                        <div class="mt-3 border-bottom border-success text-success"><b>Tin tức</b></div>
+                        <div class="mt-3 border-bottom border-success text-success"><h4><b>Tin tức</b></h4></div>
                         <div class="news_desc">
                             <div class="mt-3">
                                 07/05/2012 <br>
@@ -134,7 +150,7 @@
                     </div>
                 </div>
                 <div class="pr_link col-4">
-                    <div class="mt-3 border-bottom border-success text-success"><b>Link liên quan</b></div>
+                    <div class="mt-3 border-bottom border-success text-success"><h4><b>Link liên quan</b></h4></div>
                     <ul>
                         <li>
                             <a href="#" class="pr_list">A second link item</a>
@@ -152,7 +168,7 @@
                             <a href="#" class="pr_list">A second link item</a>
                         </li>
                     </ul>
-                    <div class="mt-3 border-bottom border-success text-success"><b>Link liên quan</b></div>
+                    <div class="mt-3 border-bottom border-success text-success"><h4><b>Link liên quan</b></h4></div>
                     <div class="product_banner text-center mt-3">
                         <img src="/assets/img/tải xuống.jpg" class="pr_banner" alt="" width="100%">
                         <img src="/assets/img/tải xuống.jpg" class="pr_banner" alt="" width="100%">
@@ -195,5 +211,11 @@
         </div>
 
     </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+      
+      <!-- Modal -->
+      
 </body>
 </html>
