@@ -1,0 +1,94 @@
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/worker_input.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid mt-3">
+        <div class="row mb-2 justify-content-center ">
+            <div class="pj-border col-11 border">
+                <div class="card-body">
+                    <div class=" row">
+                        <div class="col-8 d-flex align-items-center">
+                            <a href="#" class="link-secondary link">測定費用</a>
+                            <a href="#" class="link-secondary link text-primary text-decoration-underline">人件費</a>
+                            <a href="#" class="link-secondary">その他の費用</a>
+                        </div>
+                        <div class="col-4 d-flex align-items-center justify-content-end">
+                            <button type="button" class="size-18 btn btn-success border-common me-2">保存</button>
+                            <button type="button" class="size-18 btn btn-danger border-common ">キャンセル</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        <div class="row mb-2 justify-content-center">
+            <div class="pj-border col-11 border">
+                <div class="card-body" data-simplebar style="max-height: 250px;">
+                    <div class="content-title pt-1"><b>人件費</b></div>
+                    <div class="row pt-2">
+                        <div class="col-2">
+                            <div>番号順:</div>
+                        </div>
+                        <div class="col-5">
+                            <div>実施日:</div>
+                        </div>
+                        <div class="col-5">
+                            <div>ワーカー:</div>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-2">
+                            <div class="col-6 pe-2">
+                                <button type="button" class="list-group-item border-common list-group-item-action disabled">1</button>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <input class="form-control border-common" id="example-date" type="date" name="date">
+                        </div>
+                        <div class="col-5">
+                            <div class="border border-common">
+                                <button type="button" class="ms-2 mt-1 btn btn-primary">安本</button>
+                                <button type="button" class="mt-1 btn btn-primary">足達</button>
+                                <button type="button" class="mt-1 btn btn-primary">外園</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-2 d-flex fs-3 align-items-center">
+                            <div>総費用:</div>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" class="form-control pe-2 button-square">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="card-body">
+                    <div class=" row">
+                        <div class="col-8 d-flex pt-3 border-top">
+                            <div class="col-9">
+                                <button type="button" class="btn btn-primary size-18"><i class="uil-plus-circle me-1"></i>ワーカーを追加</button>
+                            </div>
+                        </div>
+                        <div class="col-4 pt-3 d-flex justify-content-end">
+                            <div class="size-18">人件費: <b>5700 JPY</b></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
